@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>MedAppointHub</display-name>
+  <welcome-file-list>
+    <welcome-file>HomeServlet</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HomeServlet</display-name>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>servlets.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/HomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorNamesBySpecialty</display-name>
+    <servlet-name>DoctorNamesBySpecialty</servlet-name>
+    <servlet-class>servlets.DoctorNamesBySpecialty</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorNamesBySpecialty</servlet-name>
+    <url-pattern>/DoctorNamesBySpecialty</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MakeAnAppointment</display-name>
+    <servlet-name>MakeAnAppointment</servlet-name>
+    <servlet-class>servlets.MakeAnAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MakeAnAppointment</servlet-name>
+    <url-pattern>/MakeAnAppointment</url-pattern>
+  </servlet-mapping>
+</web-app>
